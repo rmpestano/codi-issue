@@ -1,6 +1,7 @@
 package com.codi.issue;
 
-import javax.enterprise.context.SessionScoped;
+import org.apache.myfaces.extensions.cdi.core.api.scope.conversation.ViewAccessScoped;
+
 import javax.enterprise.event.Observes;
 import javax.enterprise.event.Reception;
 import javax.inject.Named;
@@ -11,8 +12,8 @@ import java.util.logging.Logger;
  * Created by rmpestano on 3/22/14.
  */
 
-//@ViewAccessScoped
-@SessionScoped
+@ViewAccessScoped
+//@SessionScoped
 @Named
 public  class AnotherBean implements Serializable{
 
